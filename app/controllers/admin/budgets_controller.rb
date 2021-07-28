@@ -63,6 +63,7 @@ class Admin::BudgetsController < Admin::BaseController
                           :currency_symbol,
                           :voting_style,
                           :main_link_url,
+                          :hide_money,
                           administrator_ids: [],
                           valuator_ids: [],
                           image_attributes: image_attributes

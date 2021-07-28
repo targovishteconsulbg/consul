@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_23_100638) do
+ActiveRecord::Schema.define(version: 2021_03_11_110036) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -366,6 +366,7 @@ ActiveRecord::Schema.define(version: 2021_01_23_100638) do
     t.string "voting_style", default: "knapsack"
     t.boolean "published"
     t.string "main_link_url"
+    t.boolean "hide_money", default: false
   end
 
   create_table "campaigns", id: :serial, force: :cascade do |t|
