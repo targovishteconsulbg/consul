@@ -2111,7 +2111,8 @@ table {
   @include full-width-background;
 
   .debates-list &::before,
-  .proposals-list &::before {
+  .proposals-list &::before,
+  .admin &::before {
     content: none;
   }
 
