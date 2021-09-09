@@ -185,7 +185,7 @@ es:
       index:
         new_button: "Añadir un grupo nuevo"
     budget_headings:
-      no_headings: "No hay partidas."
+      no_headings: "El grupo <strong>%{group}</strong> no tiene ninguna partida."
       create:
         notice: "¡Partida presupuestaria creada con éxito!"
       update:

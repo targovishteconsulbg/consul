@@ -185,7 +185,7 @@ en:
       index:
         new_button: "Add new group"
     budget_headings:
-      no_headings: "There are no headings."
+      no_headings: "There are no headings in the <strong>%{group}</strong> group."
       create:
         notice: "Heading created successfully!"
       update:
