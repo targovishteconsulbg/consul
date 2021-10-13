@@ -41,55 +41,12 @@ module Consul
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :en
+    config.i18n.default_locale = :bg
     available_locales = [
-      "ar",
-      "bg",
-      "bs",
-      "ca",
-      "cs",
-      "da",
-      "de",
-      "el",
-      "en",
-      "es",
-      "es-PE",
-      "eu",
-      "fa",
-      "fr",
-      "gl",
-      "he",
-      "hr",
-      "id",
-      "it",
-      "ka",
-      "nl",
-      "oc",
-      "pl",
-      "pt-BR",
-      "ro",
-      "ru",
-      "sl",
-      "sq",
-      "so",
-      "sr",
-      "sv",
-      "tr",
-      "uk-UA",
-      "val",
-      "zh-CN",
-      "zh-TW"]
+      "bg"]
     config.i18n.available_locales = available_locales
     config.i18n.fallbacks = {
-      "ca"    => "es",
-      "es-PE" => "es",
-      "eu"    => "es",
-      "fr"    => "es",
-      "gl"    => "es",
-      "it"    => "es",
-      "oc"    => "fr",
-      "pt-BR" => "es",
-      "val"   => "es"
+      "bg"    => "en"
     }
 
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**[^custom]*", "*.{rb,yml}")]
@@ -104,7 +61,7 @@ module Consul
 
     # Add lib to the autoload path
     config.autoload_paths << Rails.root.join("lib")
-    config.time_zone = "Madrid"
+    config.time_zone = "Sofia"
     config.active_job.queue_adapter = :delayed_job
 
     # CONSUL specific custom overrides
